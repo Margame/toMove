@@ -1,0 +1,72 @@
+{
+  "accounts": [
+    {
+      "id": 1,
+      "email": "wfm@mail.ru",
+      "phone": 551881518,
+      "password": "12345678",
+      "name": "Администратор",
+      "type": "mover"
+    },
+    {
+      "email": "email@mail.ru",
+      "password": "12345678",
+      "phone": 55182518,
+      "name": "12dmsalkds",
+      "type": "mover",
+      "id": 2
+    },
+    {
+      "email": "test@mail.ru",
+      "password": "12345678",
+      "phone": 5984881518,
+      "name": "Test",
+      "type": "mover",
+      "id": 3
+    },
+    {
+      "email": "test1@mail.ru",
+      "password": "12345678",
+      "phone": 55565666518,
+      "name": "21312",
+      "type": "mover",
+      "id": 4
+    },
+    {
+      "email": "test2@mail.ru",
+      "password": "1234324123",
+      "phone": 5518000518,
+      "name": "2132131",
+      "type": "mover",
+      "id": 5
+    },
+    {
+      "email": "ma@gmail.com",
+      "password": "privet",
+      "name": "reyswusrudrj",
+      "type": "customer",
+      "id": 6
+    },
+    {
+      "email": "ma@gmail.com",
+      "password": "privet",
+      "name": "asdgasddg",
+      "phone": "mover",
+      "id": 7
+    },
+    {
+      "email": "ma@gmail.com",
+      "password": "privet",
+      "name": "1111111111111111",
+      "type": "customer",
+      "id": 8
+    },
+    {
+      "email": "ma@gmail.com",
+      "password": "privet",
+      "name": "222222222222222222222",
+      "type": "mover",
+      "id": 9
+    }
+  ]
+}
