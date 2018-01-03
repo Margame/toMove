@@ -67,6 +67,42 @@
       "name": "222222222222222222222",
       "type": "mover",
       "id": 9
+    },
+    {
+      "email": "ma@gmail.com",
+      "password": "privet",
+      "name": "asdasgasgasgagasgasgargasrg",
+      "type": "customer",
+      "id": 10
+    },
+    {
+      "email": "dffddf@sgdgb",
+      "id": 11
+    },
+    {
+      "email": "ma@gmail.com",
+      "password": "privet",
+      "name": "asga",
+      "type": "customer",
+      "id": 12
+    },
+    {
+      "email": "kkkkk@hhhh.ru",
+      "id": 13
+    },
+    {
+      "email": "ma@gmail.com",
+      "password": "privet",
+      "name": "srherh",
+      "type": "customer",
+      "id": 14
+    },
+    {
+      "email": "ma@gmail.comx",
+      "password": "123456",
+      "name": "Max",
+      "type": "customer",
+      "id": 15
     }
   ]
 }
