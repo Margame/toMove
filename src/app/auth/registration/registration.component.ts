@@ -4,6 +4,7 @@ import {Router} from '@angular/router';
 
 import {AccountsService} from '../../shared/services/accounts.service';
 import {Account} from '../../shared/models/account.model';
+import {reject} from 'q';
 
 
 @Component({
@@ -17,11 +18,13 @@ export class RegistrationComponent implements OnInit {
 
   constructor(
     private accountsService: AccountsService,
-    private router: Router) { }
+    private router: Router) {
+
+  }
 
   ngOnInit() {
     this.form = new FormGroup({
-      'email': new FormControl(null, [Validators.required, Validators.email]),
+      'email': new FormControl(null, [Validators.required, Validators.email], this.forbiddenEmails.bind(this)),
       'password': new FormControl(null, [Validators.required, Validators.minLength(6)]),
       'name': new FormControl(null, [Validators.required]),
       'type': new FormControl(null, Validators.required)
@@ -42,6 +45,19 @@ export class RegistrationComponent implements OnInit {
           }
         });
       });
+  }
+
+  forbiddenEmails(control: FormControl): Promise<any> {
+    return new Promise((resolve, reject) => {
+      this.accountsService.getAccountByEmail(control.value)
+        .subscribe((account: Account) => {
+          if (account) {
+            resolve({forbiddenEmail: true});
+          } else {
+            resolve(null);
+          }
+        });
+    });
   }
 
 }
